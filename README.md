@@ -9,6 +9,8 @@
 <br />Тест случаи според критериумот Every branch<br />
 <br />![image](https://user-images.githubusercontent.com/101260180/171623254-44c9f8a6-c2e5-490f-bd3b-96f97f868fc9.png)<br />
 <br />Објаснување на напишаните unit tests<br />
-<br />Првиот тест се спроведува со помош на assertEquals(result1, SILab2.function(list1)) каде што result1 ни е листата што очекуваме да ни ја врати програмот.<br />
+<br />Првиот тест се спроведува со помош на assertEquals(result1, SILab2.function(list1)) каде што result1 ни е листата што очекуваме да ни ја врати програмот.
+list1 : ["0", "#", "0", "0", "0", "#", "0", "#", "#"] или <br />0#0<br />00#<br />0##<br /><br /> а листата што ја очекуваме да ја добиеме result1 гласи вака :
+<br />1#2<br />03#<br />1##<br />
 <br />Во вториот тест се користи ilex=assertThrows(IllegalArgumentException.class,()->SILab2.function(list2)) каде што очекуваме да биде фрлен исклучок бидејќи немаме елементи во листата, исклучокот треба да гласи : "List length should be greater than 0"<br />
 <br />Во третиот тест се користи ilex=assertThrows(IllegalArgumentException.class,()->SILab2.function(list3)) каде што повторно очекуваме исклучок но овој пат исклучокот треба да гласи : "List length should be a perfect square"<br />
